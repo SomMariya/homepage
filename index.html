@@ -3,16 +3,126 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Résumé</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/png" href="assets/favicon.ico" />
 
+    <!-- Description -->
+    <meta name="description" content="Personal website of Mariia Som." />
+    <meta content="This is a resume." name="subject" />
+    <title>Résumé</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+
+    <!-- Social media -->
+    <meta
+      property="og:description"
+      content="&mdash; Hi everyone! In this resume I'd like to introduce myself and tell you some interesting(or not) facts about my life. I also hope that we will meet in a real life one day, no matter what. Stay safe and Slava Ukraini!"
+    />
+    <meta property="og:title" content="Mariia Som &mdash; Resume" />
+    <meta property="og:url" content="https://sommariya.github.io/homepage/" />
+    <meta property="og:image" content="./assets/img/avatar.png" />
+    <meta property="og:image:alt" content="Photo of Mariia Som" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+
+    <meta
+      property="twitter:description"
+      content="&mdash; Hi everyone! In this resume I'd like to introduce myself and tell you some interesting(or not) facts about my life. I also hope that we will meet in a real life one day, no matter what. Stay safe and Slava Ukraini!"
+    />
+    <meta property="twitter:title" content="Mariia Som &mdash; Resume" />
+    <meta
+      property="twitter:url"
+      content="https://sommariya.github.io/homepage/"
+    />
+    <meta property="twitter:image" content="./assets/img/avatar.png" />
+    <meta property="twitter:image:alt" content="Photo of Mariia Som" />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap"
       rel="stylesheet"
     />
+    <!-- Icons -->
+    <link rel="icon" type="image/png" href="./favicon.ico" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./assets/img/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./assets/img/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./assets/img/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/img/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./assets/img/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/img/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/img/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/img/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/img/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/img/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./assets/img/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./assets/img/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
     <main>
@@ -62,7 +172,7 @@
               <div class="contact-info__block contact-info__block--center">
                 <img
                   class="contact-info__avatar"
-                  src="assets/avatar.png"
+                  src="./assets/img//avatar.png"
                   alt="Avatar"
                 />
               </div>
@@ -134,13 +244,23 @@
           </div>
         </div>
 
-        <div class="container">
+        <!-- <div class="container">
           <div class="resume__block">
             <div class="skills">
               <h3 class="skills__header">Skills</h3>
               <p class="skills__text">
                 Sleep, eat, more sleep, meow, mrrr, purr.
               </p>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="container">
+          <div class="resume__block">
+            <div class="timeline">
+              <h3 class="timeline__header">Timeline</h3>
+              <button onclick="myFunction()">Timeline</button>
+              <p id="dom" class="timeline__text">AAAAAAAAAAAAAAAAAAAAAA</p>
             </div>
           </div>
         </div>
@@ -212,5 +332,6 @@
         </div>
       </div>
     </main>
+    <script src="script/script.js"></script>
   </body>
 </html>
