@@ -74,6 +74,10 @@ body {
   .contact-info__block:not(:last-child) {
     margin-bottom: 20px;
   }
+
+  .like {
+    margin-right: 0;
+  }
 }
 
 /* Contact info styles */
@@ -186,6 +190,39 @@ body {
 .timeline__list {
   color: var(--secondary-text-color);
   margin-left: 20px;
+}
+
+/* Like and Dislike styles */
+.like {
+  flex: 1 1 50%;
+  margin-right: 50px;
+}
+
+.like__header,
+.dislike__header {
+  color: var(--secondary-text-color);
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.like__container,
+.dislike__container {
+  color: var(--secondary-text-color);
+}
+
+.like__container ul,
+.dislike__container ul {
+  margin-left: 15px;
+}
+
+.dislike {
+  flex: 1 1 50%;
+}
+.fa-thumbs-up:before {
+  color: rgb(82, 185, 82);
+}
+.fa-thumbs-down:before {
+  color: rgb(185, 66, 66);
 }
 
 /* //////////////////////////////////////////////////////////// */
