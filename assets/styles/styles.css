@@ -46,6 +46,10 @@ body {
   flex-direction: column;
 }
 
+.align-center {
+  align-items: center;
+}
+
 .resume {
   margin: 50px auto;
   border: 1px solid #f5f5f5;
@@ -181,7 +185,8 @@ body {
   text-align: justify;
 }
 
-.timeline__header {
+.timeline__header,
+.hobbies__header {
   color: var(--secondary-text-color);
   text-align: center;
   margin-bottom: 15px;
@@ -223,6 +228,21 @@ body {
 }
 .fa-thumbs-down:before {
   color: rgb(185, 66, 66);
+}
+
+/* Hobbies */
+.hobbies__flag {
+  width: 2rem;
+  height: 2rem;
+}
+
+.hobbies__flag:hover {
+  transform: scale(2);
+  cursor: pointer;
+}
+
+.hobbies__text {
+  margin-bottom: 10px;
 }
 
 /* //////////////////////////////////////////////////////////// */
