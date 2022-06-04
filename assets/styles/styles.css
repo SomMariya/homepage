@@ -236,9 +236,11 @@ body {
   height: 2rem;
 }
 
-.hobbies__flag:hover {
-  transform: scale(2);
-  cursor: pointer;
+@media screen and (min-width: 726px) {
+  .hobbies__flag:hover {
+    transform: scale(2);
+    cursor: pointer;
+  }
 }
 
 .hobbies__text {
