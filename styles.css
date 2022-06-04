@@ -45,7 +45,7 @@ body {
 
 .resume__block {
   border-bottom: 3px solid var(--border-color);
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   margin-bottom: 15px;
 }
 
@@ -83,13 +83,13 @@ body {
 
 .contact-info__sub-header {
   color: var(--secondary-text-color);
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .contact-info__block {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .contact-info__block--center {
@@ -121,12 +121,13 @@ body {
 .contact-info__item-icon {
   height: 1.1428rem;
   vertical-align: text-bottom;
+  align-self: center;
 }
 
 .contact-info__avatar {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
   border: 3px solid;
   border-color: var(--text-decoration-color);
