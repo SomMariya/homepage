@@ -245,6 +245,16 @@ body {
   margin-bottom: 10px;
 }
 
+.hobbies button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
 /* //////////////////////////////////////////////////////////// */
 details {
   display: block;
@@ -336,4 +346,77 @@ li.details > input {
 .timeline_details_label:hover {
   cursor: pointer;
   color: #ff9a00;
+}
+
+/* Carousel */
+
+.carousel__container {
+  width: 100%;
+  max-width: 800px;
+  max-height: 600px;
+  height: 50vh;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.carousel__container input[type='radio'] {
+  display: none;
+}
+
+.carousel__container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.carousel__container .cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.carousel__container .card {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+#carousel__item-1:checked ~ .cards #carousel__photo-3,
+#carousel__item-2:checked ~ .cards #carousel__photo-1,
+#carousel__item-3:checked ~ .cards #carousel__photo-2 {
+  transform: translatex(-40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+#carousel__item-1:checked ~ .cards #carousel__photo-2,
+#carousel__item-2:checked ~ .cards #carousel__photo-3,
+#carousel__item-3:checked ~ .cards #carousel__photo-1 {
+  transform: translatex(40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+#carousel__item-1:checked ~ .cards #carousel__photo-1,
+#carousel__item-2:checked ~ .cards #carousel__photo-2,
+#carousel__item-3:checked ~ .cards #carousel__photo-3 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+}
+#carousel__item-1:checked ~ .cards #carousel__photo-1,
+#carousel__item-2:checked ~ .cards #carousel__photo-2,
+#carousel__item-3:checked ~ .cards #carousel__photo-3 img {
+  box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
 }

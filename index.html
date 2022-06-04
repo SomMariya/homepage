@@ -561,44 +561,99 @@
               </p>
               <div class="fh">
                 <div class="fv align-center">
-                  <a href="https://goo.gl/maps/Cd4MppPSaTyhVnSQ6">
+                  <button onclick="showCountryCarousel('Turkey')">
                     <img
                       class="hobbies__flag"
                       src="./assets/img/turkey.png"
-                      alt="Turkey" /></a
-                  ><span>Turkey</span>
+                      alt="Turkey"
+                    /></button
+                  ><span id="hobbies__label__Turkey" class="hobbies__label"
+                    >Turkey</span
+                  >
                 </div>
                 <div class="fv align-center">
-                  <a href="https://goo.gl/maps/YaFCYtM2cw45woBx8">
+                  <button onclick="showCountryCarousel('United_Kingdom')">
                     <img
                       class="hobbies__flag"
                       src="./assets/img/united-kingdom.png"
-                      alt="United Kingdom" /></a
-                  ><span>United Kingdom</span>
+                      alt="United Kingdom"
+                    /></button
+                  ><span
+                    id="hobbies__label__United_Kingdom"
+                    class="hobbies__label"
+                    >United Kingdom</span
+                  >
                 </div>
                 <div class="fv align-center">
-                  <a href="https://goo.gl/maps/L8ybk5umMgrL7i9u7">
+                  <button onclick="showCountryCarousel('United_Arab_Emirates')">
                     <img
                       class="hobbies__flag"
                       src="./assets/img/united-arab-emirates.png"
-                      alt="United Arab Emirates" /></a
-                  ><span>United Arab Emirates</span>
+                      alt="United Arab Emirates"
+                    /></button
+                  ><span
+                    id="hobbies__label__United_Arab_Emirates"
+                    class="hobbies__label"
+                    >United Arab Emirates</span
+                  >
                 </div>
                 <div class="fv align-center">
-                  <a href="https://goo.gl/maps/SQwCavaFHqmc6xvw6">
+                  <button onclick="showCountryCarousel('Bulgaria')">
                     <img
                       class="hobbies__flag"
                       src="./assets/img/bulgaria.png"
-                      alt="Bulgaria" /></a
-                  ><span>Bulgaria</span>
+                      alt="Bulgaria"
+                    /></button
+                  ><span id="hobbies__label__Bulgaria" class="hobbies__label"
+                    >Bulgaria</span
+                  >
                 </div>
                 <div class="fv align-center">
-                  <a href="https://goo.gl/maps/E2TabUopBTjxaR147">
+                  <button onclick="showCountryCarousel('Romania')">
                     <img
                       class="hobbies__flag"
                       src="./assets/img/romania.png"
-                      alt="Romania" /></a
-                  ><span>Romania</span>
+                      alt="Romania"
+                    /></button
+                  ><span id="hobbies__label__Romania" class="hobbies__label"
+                    >Romania</span
+                  >
+                </div>
+              </div>
+
+              <div class="fv align-center">
+                <div class="carousel__container">
+                  <input
+                    type="radio"
+                    name="slider"
+                    id="carousel__item-1"
+                    checked
+                  />
+                  <input type="radio" name="slider" id="carousel__item-2" />
+                  <input type="radio" name="slider" id="carousel__item-3" />
+                  <div class="cards">
+                    <label
+                      class="card"
+                      for="carousel__item-1"
+                      id="carousel__photo-1"
+                    >
+                      <img alt="Photo from country 1" />
+                    </label>
+                    <label
+                      class="card"
+                      for="carousel__item-2"
+                      id="carousel__photo-2"
+                    >
+                      <img alt="Photo from country 2" />
+                    </label>
+                    <label
+                      class="card"
+                      for="carousel__item-3"
+                      id="carousel__photo-3"
+                    >
+                      <img alt="Photo from country 3" />
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
